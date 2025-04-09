@@ -39,9 +39,8 @@ A modern real estate web application built using the **MERN Stack** that allows 
 
 | Home Page | Admin Panel | Property Details |
 |----------|--------------|------------------|
-![image](https://github.com/user-attachments/assets/0fb5d560-c88e-4faf-b206-116363d30624)
-![image](https://github.com/user-attachments/assets/f25c9251-0109-411a-951f-28d88265a50b)
-![{1450DCD2-9B46-457B-A81A-01EDD15328C9}](https://github.com/user-attachments/assets/b7a5c96d-7dc1-48b5-ab74-3898090e67ac)
+| ![Home]![image](https://github.com/user-attachments/assets/0fb5d560-c88e-4faf-b206-116363d30624) | ![Admin]![image](https://github.com/user-attachments/assets/f25c9251-0109-411a-951f-28d88265a50b) | ![Details]![{1450DCD2-9B46-457B-A81A-01EDD15328C9}](https://github.com/user-attachments/assets/b7a5c96d-7dc1-48b5-ab74-3898090e67ac) |
+
 
 ---
 
@@ -51,22 +50,23 @@ A modern real estate web application built using the **MERN Stack** that allows 
    ```bash
    git clone https://github.com/aditya-1310/Estate.git
    cd Estate
-cd client
-npm install
+   cd client
+   npm install
 2. **Install frontend dependencies**
+    ```bash
+    cd client
+   npm instal
+2 **Install backend dependencies**
 
-cd client
-npm install
-3. **Install backend dependencies**
+    cd ../server
+      npm install
+      Create .env file in server/ directory
 
-cd ../server
-npm install
-Create .env file in server/ directory
-
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-Run the app
+      MONGO_URI=your_mongodb_connection_string
+      JWT_SECRET=your_secret_key
+      Run the app
 
 4. **# From project root**
+ ```bash
 cd server && npm start
 cd client && npm start
