@@ -7,10 +7,10 @@ pipeline {
 
     stages {
         stage('Clone Repository') {
-            steps {
-                git credentialsId: 'your-credential-id', url: 'https://github.com/aditya-1310/Estate.git'
-            }
-        }
+    steps {
+        git url: 'https://github.com/aditya-1310/Estate.git', branch: 'main'
+    }
+}
 
         stage('Build Docker Containers') {
             steps {
