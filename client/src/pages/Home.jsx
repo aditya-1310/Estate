@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import 'swiper/css/bundle';
+import 'swiper/css/navigation';
 import ListingItem from '../components/ListingItem';
 
 export default function Home() {
@@ -69,18 +70,24 @@ export default function Home() {
       </div>
 
       {/* swiper */}
-      <Swiper navigation>
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        spaceBetween={30}
+        slidesPerView={1}
+        className="mySwiper"
+      >
         {offerListings &&
           offerListings.length > 0 &&
           offerListings.map((listing) => (
-            <SwiperSlide>
+            <SwiperSlide key={listing._id}>
               <div
                 style={{
                   background: `url(${listing.imageUrls[0]}) center no-repeat`,
-                  backgroundSize: '90%',
+                  backgroundSize: 'cover',
+                  width: '100%'
                 }}
                 className='h-[500px]'
-                key={listing._id}
               ></div>
             </SwiperSlide>
           ))}
