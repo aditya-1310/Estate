@@ -31,7 +31,7 @@ pipeline {
 
     post {
         success {
-            echo 'Build and deployment succeeded!'
+            echo 'Hello world'
         }
         failure {
             echo 'Build or deployment failed!'
