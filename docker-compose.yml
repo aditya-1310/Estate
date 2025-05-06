@@ -1,22 +1,24 @@
 version: '3.8'
 services:
   api:
-    build: ./api
+    image: bhadadeaditya/estate-api:v1
     ports:
       - "5000:5000"
     environment:
       - ./api/.env
     volumes:
       - ./api:/app
+    
 
   client:
-    build: ./client
+    image: bhadadeaditya/estate-client:v1
     ports:
       - "5173:5173"
     environment:
       - ./client/.env
     depends_on:
       - api
+    
 
 networks:
   api-network:
