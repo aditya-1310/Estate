@@ -3,8 +3,8 @@ import React from 'react';
 export default function About() {
   const testimonials = [
     {
-      name: 'John Doe',
-      title: 'Renter',
+      name: 'Lakshya veer singh',
+      title: 'Seller',
       image: '/images/testimonial-1.jpg',
       text: 'I continue to rent and found . The platform was easy to use and the listings were diverse and well-organized. I found a great apartment and had a smooth rental experience.',
     },
