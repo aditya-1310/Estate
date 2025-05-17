@@ -23,6 +23,7 @@ pipeline {
         stage('Run Docker Image') {
             steps {
                 script {
+                    echo 'hellow world'
                     sh 'docker run -d -p 8085:8080 moot-court-app'
                 }
             }
@@ -31,7 +32,7 @@ pipeline {
 
     post {
         success {
-            echo 'Build and deployment succeeded!'
+            echo 'Hello world'
         }
         failure {
             echo 'Build or deployment failed!'
