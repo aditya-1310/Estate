@@ -16,7 +16,46 @@ A modern real estate web application built using the **MERN Stack** that allows 
 - 💾 **MongoDB Database:** Stores all property and user data efficiently.
 - 🔁 **Persistent Sessions:** Users stay logged in until they choose to logout.
 
+## 🧪 Software Testing & QA
+
+- ✅ **API Testing using Java + REST Assured**  
+  Test cases written in Java to validate major endpoints like:
+  - `POST /api/auth/login`
+  - `POST /api/properties`
+  - `GET /api/properties/:id`
+  - Status code, schema, and response body assertions
+
+- ✅ **Postman Collection**  
+  Covers manual tests for login, property create, get by ID, update, delete — with assertion scripts using `pm.expect()`.
+
+- ✅ **JUnit for Assertions**  
+  Used for writing reusable and automated test logic within Java framework.
+
+- ✅ **End-to-End Test Flow**  
+  (Planned using Playwright or Selenium) to automate complete user journey:
+  - Login → Add Property → Verify Property Appears
+
 ---
+
+## ⚙️ CI/CD & Docker
+
+- ✅ **Jenkins Integration**
+  - Automated test and build pipeline
+  - Triggers on every Git push
+  - Runs all test cases before deployment
+  - Builds Docker image
+  - Pushes image to DockerHub or server
+
+- 🐳 **Dockerized Application**
+  - Multi-container setup using `docker-compose`
+  - Services:
+    - Frontend (React)
+    - Backend (Node)
+    - MongoDB
+
+---
+
+
 
 ## 🛠 Tech Stack
 
