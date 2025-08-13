@@ -2,51 +2,51 @@
 
 A modern real estate web application built using the **MERN Stack** that allows users to explore, search, and view property listings with a sleek and responsive design.
 
-> 🚀 [Live Demo](https://estate-ahv7.onrender.com)
+>  [Live Demo](https://estate-ahv7.onrender.com)
 
 ---
 
-## 📌 Features
+##  Features
 
-- 🔍 **Browse Listings:** View property cards with images, location, pricing, and property type.
-- 🎯 **Filter Properties:** Search and filter by name, type, and price range.
-- 🧑‍💼 **Admin Access:** Add, update, or delete property listings.
-- 🔐 **User Authentication:** Secure login and registration using JWT.
-- 🌐 **Responsive UI:** Mobile-friendly layout using Tailwind CSS.
-- 💾 **MongoDB Database:** Stores all property and user data efficiently.
-- 🔁 **Persistent Sessions:** Users stay logged in until they choose to logout.
+-  **Browse Listings:** View property cards with images, location, pricing, and property type.
+-  **Filter Properties:** Search and filter by name, type, and price range.
+-  **Admin Access:** Add, update, or delete property listings.
+-  **User Authentication:** Secure login and registration using JWT.
+-  **Responsive UI:** Mobile-friendly layout using Tailwind CSS.
+-  **MongoDB Database:** Stores all property and user data efficiently.
+-  **Persistent Sessions:** Users stay logged in until they choose to logout.
 
-## 🧪 Software Testing & QA
+##  Software Testing & QA
 
-- ✅ **API Testing using Java + REST Assured**  
+-  **API Testing using Java + REST Assured**  
   Test cases written in Java to validate major endpoints like:
   - `POST /api/auth/login`
   - `POST /api/properties`
   - `GET /api/properties/:id`
   - Status code, schema, and response body assertions
 
-- ✅ **Postman Collection**  
+-  **Postman Collection**  
   Covers manual tests for login, property create, get by ID, update, delete — with assertion scripts using `pm.expect()`.
 
-- ✅ **JUnit for Assertions**  
+-  **JUnit for Assertions**  
   Used for writing reusable and automated test logic within Java framework.
 
-- ✅ **End-to-End Test Flow**  
+-  **End-to-End Test Flow**  
   (Planned using Playwright or Selenium) to automate complete user journey:
   - Login → Add Property → Verify Property Appears
 
 ---
 
-## ⚙️ CI/CD & Docker
+##  CI/CD & Docker
 
-- ✅ **Jenkins Integration**
+-  **Jenkins Integration**
   - Automated test and build pipeline
   - Triggers on every Git push
   - Runs all test cases before deployment
   - Builds Docker image
   - Pushes image to DockerHub or server
 
-- 🐳 **Dockerized Application**
+-  **Dockerized Application**
   - Multi-container setup using `docker-compose`
   - Services:
     - Frontend (React)
@@ -57,7 +57,7 @@ A modern real estate web application built using the **MERN Stack** that allows 
 
 
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 **Frontend:**  
 - React.js  
@@ -74,7 +74,7 @@ A modern real estate web application built using the **MERN Stack** that allows 
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 | Home Page | Admin Panel | Property Details |
 |----------|--------------|------------------|
@@ -83,7 +83,7 @@ A modern real estate web application built using the **MERN Stack** that allows 
 
 ---
 
-## 🔧 Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository**
    ```bash
